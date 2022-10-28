@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Converter</title>
+    <!-- Put the Library in your <head> tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+    <!-- Put the resizer code after your <iframe> tag -->
+    <script>iFrameResize({ log: false, minHeight: 400 }, '#widgetApi')</script>
+<link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="wrapper">
+        <header>
+            <h1>MP3 Converter</h1>
+            <p>Paste URL video you would like to convert to MP3</p>
+        </header>
+        <div class="form">
+            <input type="text" placeholder="Enter URL">
+        <button>Download</button>
+        </div>
+        <div class="mp3-link">
+            <iframe id="widgetv2Api" src=""
+                width="100%" height="100%" allowtransparency="true" scrolling="yes" style="border:none" alt="mp3-link">
+            </iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
